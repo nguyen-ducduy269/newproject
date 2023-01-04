@@ -22,3 +22,6 @@ let z = $(".accnt");
 $(".account").on("click", function () {
   z.css("display", "block");
 });
+$(".layout").on("click", function () {
+  z.css("display", "none");
+});
