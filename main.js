@@ -18,7 +18,7 @@ $(".help-close").on("click", function () {
   y.css("top", "-350px");
 });
 // account
-let z = $(".header-account");
+let z = $(".accnt");
 $(".account").on("click", function () {
-  z.css("right", "0");
+  z.css("display", "block");
 });
