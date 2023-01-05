@@ -125,6 +125,7 @@ body a {
   display: flex;
   justify-content: space-around;
   transition: 1s;
+  z-index: 1;
 }
 .header-help .item {
   height: 100%;
@@ -146,6 +147,10 @@ body a {
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 15px;
+}
+.header-help a:hover {
+  color: black;
+  text-decoration: underline;
 }
 /* header-account */
 .accnt {
@@ -238,6 +243,7 @@ body a {
 .shopify-hero {
   height: 800px;
   position: relative;
+  z-index: -1;
 }
 .shopify-hero .item {
   height: 500px;
@@ -257,6 +263,9 @@ body a {
   position: absolute;
   bottom: 55px;
   left: 140px;
+}
+
+.item .hero a {
   color: white;
 }
 .last-call {
@@ -284,7 +293,22 @@ body a {
 }
 /* shopify-acticles */
 .shopify-acticles {
+  margin-top: 30px;
   height: 400px;
+}
+.shopify-acticles .content {
+  width: 100%;
+  height: 80px;
+}
+.content .content-title {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  width: 450px;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  line-height: 50px;
 }
 .shopify-acticles a {
   width: 100%;
@@ -327,15 +351,26 @@ body a {
 /* favorite-style */
 .favorite-style {
   height: 700px;
+  margin-top: 10%;
 }
-.favorite-style .item {
+.favorite-style .favor-content {
+  width: 100%;
   height: 50px;
 }
 .favorite-style p {
-  font-size: 28px;
+  width: 464px;
+  font-size: 45px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  line-height: 50px;
+  font-weight: 600;
 }
 .favor img {
   width: 100%;
+}
+.favor {
+  margin-top: 30px;
 }
 .favor .title {
   font-size: 14px;
@@ -349,8 +384,27 @@ body a {
 .favor a:hover {
   color: black;
 }
-
 /* shopify-pair */
+.shopify-pair {
+  position: relative;
+  margin-top: 5%;
+  z-index: -1;
+}
+.shopify-pair .discount {
+  width: 100%;
+  height: 50px;
+}
+.shopify-pair .discount .incentive-gift {
+  width: 600px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
 .shopify-pair img {
   width: 100%;
   height: 500px;
@@ -367,6 +421,9 @@ body a {
 }
 .shopify-pair a:hover {
   color: black;
+}
+.shopify-pair-content {
+  margin-top: 30px;
 }
 /* footer */
 .footer {
@@ -394,6 +451,7 @@ body a {
   font-size: 14px;
   padding-top: 15px;
   font-weight: 400;
+  text-decoration: none;
 }
 .footer-meta {
   width: 100%;
@@ -408,4 +466,192 @@ body a {
 .footer-meta .privacy {
   margin: 0;
   padding-right: 115px;
+}
+.footer a:hover {
+  color: black;
+}
+.heading {
+  display: none;
+}
+.shopify-actcl {
+  display: none;
+}
+@media only screen and (max-width: 1350px) {
+  .container {
+    width: 1170px;
+  }
+  .shopify-actcl {
+    display: none;
+  }
+  .shopify-image img {
+    width: 100%;
+    height: 760px;
+  }
+  .shopify-pair {
+    position: relative;
+    margin-top: 0%;
+  }
+  .heading {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+  .shopify-actcl {
+    display: none;
+  }
+  /* header */
+  .header .item .list {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+  }
+  .header .item .head-list {
+    width: 100%;
+    display: flex;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+  /* feature-content */
+  .feature-content {
+    height: 280px;
+  }
+  /* footer */
+  .footer .email {
+    font-size: 14px;
+    width: 100%;
+    padding-top: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .heading {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .header {
+    display: none;
+  }
+  .heading {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .heading .item {
+    width: 100%;
+    display: flex;
+  }
+  .heading .icon {
+    width: 100px;
+    height: 70px;
+  }
+  .heading .icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .heading .list {
+    width: 100%;
+    display: flex;
+  }
+  .heading .head-list {
+    width: 100%;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 23px;
+  }
+  .heading .circle {
+    width: 36px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 5px;
+    margin-top: 20px;
+  }
+  /* feature-content */
+  .feature-content {
+    height: 200px;
+  }
+  /* shopify-hero */
+  .shopify-hero {
+    height: 520px;
+    position: relative;
+  }
+  .shopify-image img {
+    width: 700px;
+    height: 460px;
+  }
+  .shopify-hero .item .hero {
+    position: absolute;
+    bottom: 55px;
+    left: 150px;
+  }
+  /* shopify-actcl */
+  .shopify-acticles {
+    display: none;
+  }
+  .shopify-actcl {
+    display: block;
+  }
+  .shopify-actcl .content {
+    margin-bottom: 20px;
+  }
+  .shopify-actcl .item {
+    position: relative;
+    z-index: -1;
+  }
+  .shopify-actcl .item img {
+    width: 100%;
+    height: 400px;
+  }
+  .shopify-actcl .acticles {
+    display: none;
+  }
+  .shopify-actcl .acticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    background-color: #00000066;
+  }
+  .shopify-actcl .acticles .title {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+  }
+  .shopify-actcl .acticles:hover {
+    display: block;
+  }
+  /* favorite-style */
+  .favorite-style {
+    height: 480px;
+    margin-top: 10%;
+  }
+  .favor .title {
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 15px;
+  }
+  .favor .cost {
+    font-size: 12px;
+    font-weight: 200;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
 }
