@@ -25,3 +25,14 @@ $(".account").on("click", function () {
 $(".layout").on("click", function () {
   z.css("display", "none");
 });
+
+let mc = $(".mobile-content");
+let back = $(".back");
+$(".open").on("click", function () {
+  mc.css("left", "0");
+  back.css("display", "block");
+});
+$(".close").on("click", function () {
+  mc.css("left", "-256px");
+  back.css("display", "none");
+});
