@@ -473,7 +473,9 @@ body a {
 }
 .shopify-actcl,
 .shopify-content,
-.mobile-header {
+.mobile-header,
+.shopofy-mobile,
+.foot {
   display: none;
 }
 
@@ -483,7 +485,9 @@ body a {
   }
   .shopify-actcl,
   .shopify-content,
-  .mobile-header {
+  .mobile-header,
+  .shopofy-mobile,
+  .foot {
     display: none;
   }
   .shopify-image img {
@@ -504,7 +508,9 @@ body a {
   }
   .shopify-actcl,
   .shopify-content,
-  .mobile-header {
+  .mobile-header,
+  .shopofy-mobile,
+  .foot {
     display: none;
   }
   /* header */
@@ -544,7 +550,9 @@ body a {
   }
   .shopify-actcl,
   .shopify-content,
-  .mobile-header {
+  .mobile-header,
+  .shopofy-mobile,
+  .foot {
     display: none;
   }
   /* header */
@@ -602,7 +610,9 @@ body a {
     display: none;
   }
   .header,
-  .mobile-header {
+  .mobile-header,
+  .shopofy-mobile,
+  .foot {
     display: none;
   }
   .heading {
@@ -720,7 +730,9 @@ body a {
     width: 100%;
   }
   .header,
-  .mobile-header {
+  .mobile-header,
+  .shopofy-mobile,
+  .foot {
     display: none;
   }
   .heading {
@@ -854,8 +866,12 @@ body a {
   .header-help,
   .accnt,
   .heading,
-  main {
+  .shopify-actcl,
+  .footer {
     display: none;
+  }
+  .shopofy-mobile {
+    display: block;
   }
   /* mobile-header */
   .mobile-header {
@@ -871,7 +887,7 @@ body a {
     width: 100%;
   }
   .mobile-head img {
-    max-width: 102%;
+    max-width: 100%;
     height: 440px;
   }
   .mobile-header .mobile-infor {
@@ -949,5 +965,154 @@ body a {
   }
   .mobile-content .back {
     display: none;
+  }
+  .mobile-header .mobile-account {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .mobile-account button {
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 7px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 13px;
+    margin-top: 10px;
+  }
+  .mobile-account a {
+    height: 50px;
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
+  }
+  .mobile-header .account-back {
+    width: 520px;
+    height: 690px;
+    background-color: #000000b5;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -20%;
+  }
+  .mobile-header .mobile-account {
+    display: none;
+  }
+  .mobile-header .account-back {
+    display: none;
+  }
+  /* feature-content */
+  .feature-content {
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+  }
+  .feature-details {
+    font-weight: 600;
+    padding-top: 10px;
+    margin-top: -53px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+  }
+  .feature-details a {
+    font-size: 18px;
+  }
+  /* shopify-hero */
+  .shopify-hero {
+    display: none;
+  }
+  .content .content-title {
+    width: 300px;
+    font-size: 32px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+  /* shopofy-mobile */
+  .shopofy-mobile {
+    display: block;
+    width: 100%;
+    height: 660px;
+    background-color: red;
+  }
+  /* favorite-style */
+  .favorite-style {
+    height: 100%;
+  }
+  .favorite-style .favor-content {
+    width: 300px;
+    font-size: 32px;
+    height: 105px;
+    line-height: 70px;
+  }
+  .favorite-style p {
+    width: 300px;
+    font-size: 39px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    font-weight: 500;
+  }
+  .favor .title {
+    font-size: 22px;
+  }
+  .favor .cost {
+    font-size: 22px;
+  }
+  .favor .item {
+    margin-bottom: 30px;
+  }
+  /* shopify-pair */
+  .shopify-pair .discount {
+    width: 100%;
+    height: 70px;
+  }
+  .shopify-pair .discount .incentive-gift {
+    width: 400px;
+    height: 60px;
+    font-size: 32px;
+    margin-bottom: 0;
+    line-height: 60px;
+  }
+  .shopify-pair .title {
+    font-size: 20px;
+  }
+  .shopify-pair .detail {
+    font-size: 18px;
+  }
+  /* foot */
+  .foot {
+    display: block;
+    margin-top: 100px;
+  }
+  .foot .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .foot .text {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+  }
+  .footer-meta {
+    margin-top: 30px;
+    font-size: 14px;
   }
 }

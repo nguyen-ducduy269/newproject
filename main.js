@@ -36,3 +36,14 @@ $(".close").on("click", function () {
   mc.css("left", "-256px");
   back.css("display", "none");
 });
+
+let ma = $(".mobile-account");
+let ab = $(".account-back");
+$(".mobile-acc").on("click", function () {
+  ma.css("display", "block");
+  ab.css("display", "block");
+});
+ab.on("click", function () {
+  ma.css("display", "none");
+  ab.css("display", "none");
+});
