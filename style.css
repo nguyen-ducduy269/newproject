@@ -1111,8 +1111,35 @@ body a {
     -webkit-box-orient: vertical;
     margin-bottom: 15px;
   }
+  .foot .item a {
+    font-size: 14px;
+  }
   .footer-meta {
     margin-top: 30px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 100%;
+  }
+  .shopofy-mobile {
+    display: block;
+    width: 100%;
+    height: unset;
+    background-color: white;
+  }
+  .shopofy-mobile .item img {
+    max-width: 100%;
+  }
+  .shopofy-mobile .item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .shopofy-mobile .item .acticles {
     font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5px;
   }
 }
