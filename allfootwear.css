@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.header .item .list {
+  width: 60%;
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+.header .item .head-list {
+  width: 60%;
+  display: flex;
+  margin-right: -31px;
+  margin-top: 30px;
+  gap: 20px;
+}
+/* main */
+/* sale */
+.main-head .text {
+  font-size: 14px;
+  font-weight: 600;
+}
+.sale {
+  margin-top: 50px;
+}
+.sale .item {
+  position: relative;
+  z-index: -1;
+}
+.sale .item img {
+  max-width: 100%;
+}
+.sale .item .description {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+}
+.sale .item .price {
+  display: flex;
+  gap: 10px;
+}
+.sale .price .original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: gray;
+}
+.sale .price .update-price {
+  font-size: 14px;
+  font-weight: 400;
+}
+.sale .discount {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 13px;
+  color: #313131;
+  white-space: nowrap;
+}
+/* tele */
+.tele {
+  margin-top: 50px;
+}
+.tele .item {
+  position: relative;
+  z-index: -1;
+}
+.tele .item img {
+  max-width: 100%;
+}
+.tele .item .description {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+}
+.tele .item .price {
+  display: flex;
+  gap: 10px;
+}
+.tele .price .original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: gray;
+}
+.tele .price .update-price {
+  font-size: 14px;
+  font-weight: 400;
+}
+.tele .discount {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 13px;
+  color: #313131;
+  white-space: nowrap;
+}
