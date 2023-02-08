@@ -888,6 +888,8 @@ body a {
     width: 100%;
     position: absolute;
     bottom: 14px;
+    left: 0;
+    padding-left: 30px;
   }
   .mobile-infor div {
     font-size: 22px;
@@ -899,6 +901,7 @@ body a {
     position: absolute;
     display: flex;
     top: 10px;
+    left: 0;
   }
   .mobile-details .open {
     font-size: 24px;
@@ -986,6 +989,7 @@ body a {
     margin-top: 10px;
   }
   .mobile-account a {
+    display: block;
     height: 50px;
     border-bottom: 1px solid;
     width: 100%;
@@ -1169,5 +1173,10 @@ body a {
   .mobile-head img {
     max-width: 100%;
     height: 360px;
+  }
+  .mobile-account button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
