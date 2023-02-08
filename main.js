@@ -48,6 +48,9 @@ ab.on("click", function () {
   ab.css("display", "none");
 });
 
+$(".circle").on("click", function () {
+  z.css("display", "block");
+});
 $("#shopofy-mobile").owlCarousel({
   loop: true,
   margin: 10,
