@@ -47,3 +47,20 @@ ab.on("click", function () {
   ma.css("display", "none");
   ab.css("display", "none");
 });
+
+$("#shopofy-mobile").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 5,
+    },
+  },
+});

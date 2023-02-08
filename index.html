@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shoe Shop</title>
+    <!-- link owl -->
+    <link
+      rel="stylesheet"
+      href="./assets/lib/owlcarousel/assets/owl.carousel.min.css"
+    />
     <!-- link font awwesome -->
     <link
       rel="stylesheet"
@@ -442,28 +447,30 @@
 
         <div class="container">
           <div class="row">
-            <div class="item">
-              <img src="./assets/image/modual.webp" alt="" />
-              <div class="acticles">
-                <a href="">
-                  <div class="title">Modual Packaging</div>
-                </a>
+            <div id="shopofy-mobile" class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="./assets/image/modual.webp" alt="" />
+                <div class="acticles">
+                  <a href="">
+                    <div class="title">Modual Packaging</div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <img src="./assets/image/who we are.jpg" alt="" />
-              <div class="acticles">
-                <a href="">
-                  <div class="title">Who we are</div>
-                </a>
+              <div class="item">
+                <img src="./assets/image/who we are.jpg" alt="" />
+                <div class="acticles">
+                  <a href="">
+                    <div class="title">Who we are</div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <img src="./assets/image/designer.jpg" alt="" />
-              <div class="acticles">
-                <a href="">
-                  <div class="title">How it's made</div>
-                </a>
+              <div class="item">
+                <img src="./assets/image/designer.jpg" alt="" />
+                <div class="acticles">
+                  <a href="">
+                    <div class="title">How it's made</div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -691,6 +698,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <!-- link js -->
     <script type="module" src="main.js"></script>
     <script src="./vite.config.js"></script>

@@ -29,7 +29,9 @@
   src: url("./font/JosefinSans-Regular.ttf");
   font-weight: 700;
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   position: relative;
   width: 100%;
@@ -160,6 +162,7 @@ body a {
   width: 100%;
   height: 100%;
   top: 0;
+  z-index: 20;
 }
 .accnt .layout {
   width: 100%;
@@ -245,7 +248,7 @@ body a {
 .shopify-hero {
   height: 800px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 .shopify-hero .item {
   height: 760px;
@@ -481,7 +484,7 @@ body a {
   display: none;
 }
 
-@media only screen and (max-width: 1350px) and (min-width: 1199px) {
+@media only screen and (max-width: 1350px) {
   .container {
     width: 1170px;
   }
@@ -504,7 +507,7 @@ body a {
     display: none;
   }
 }
-@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+@media only screen and (max-width: 1199px) {
   .container {
     width: 970px;
   }
@@ -546,64 +549,7 @@ body a {
     display: none;
   }
 }
-@media only screen and (max-width: 1024px) and (min-width: 991px) {
-  .container {
-    width: 970px;
-  }
-  .shopify-actcl,
-  .shopify-content,
-  .mobile-header,
-  .shopofy-mobile,
-  .foot {
-    display: none;
-  }
-  /* header */
-  .header .item .list {
-    width: 100%;
-    display: flex;
-    margin-top: 30px;
-  }
-  .header .item .head-list {
-    width: 100%;
-    display: flex;
-    margin-right: 15px;
-    margin-top: 30px;
-  }
-  /* shopify-hero  */
-  .shopify-hero .item .hero {
-    position: absolute;
-    bottom: 55px;
-    left: 74px;
-  }
-  /* shopify-acticles */
-  .shopify-acticles {
-    margin-top: 60px;
-    height: 400px;
-  }
-  /* favorite-style */
-  .favorite-style {
-    margin-top: 10%;
-  }
-  /* feature-content */
-  .feature-content {
-    height: 280px;
-  }
-  /* footer */
-  .footer .email {
-    font-size: 14px;
-    width: 100%;
-    padding-top: 15px;
-    font-weight: 400;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .heading {
-    display: none;
-  }
-}
-@media only screen and (max-width: 991px) and (min-width: 769px) {
+@media only screen and (max-width: 991px) {
   .container {
     width: 750px;
   }
@@ -727,7 +673,7 @@ body a {
     font-weight: 200;
   }
 }
-@media only screen and (max-width: 769px) and (min-width: 600px) {
+@media only screen and (max-width: 769px) {
   .container {
     width: 100%;
   }
@@ -757,11 +703,15 @@ body a {
     width: 100%;
     display: flex;
   }
+  .heading .list a {
+    font-size: 12px;
+  }
   .heading .head-list {
     width: 100%;
     display: flex;
     margin-left: 50px;
-    margin-top: 23px;
+    margin-top: 30px;
+    font-size: 12px;
   }
   .heading .circle {
     width: 36px;
@@ -773,6 +723,18 @@ body a {
     padding-top: 5px;
     margin-top: 20px;
   }
+  .header-help {
+    height: 250px;
+  }
+  .header-help .title {
+    font-size: 14px;
+  }
+  .header-help .details div {
+    font-size: 11px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    white-space: nowrap;
+  }
   /* feature-content */
   .feature-content {
     height: 200px;
@@ -783,7 +745,7 @@ body a {
     position: relative;
   }
   .shopify-image img {
-    width: 700px;
+    width: 100%;
     height: 460px;
   }
   .shopify-hero .item .hero {
@@ -863,8 +825,33 @@ body a {
     height: unset;
     margin-top: 30px;
   }
+  /* shopify-pair */
+  .shopify-pair .discount .incentive-gift {
+    width: 100%;
+    height: 100%;
+  }
+  /* footer */
+  .footer .title {
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .footer .text {
+    font-size: 12px;
+    padding-top: 10px;
+    font-weight: 400;
+  }
+  .footer-meta .terms {
+    font-size: 12px;
+    margin: 0;
+    padding-right: 30px;
+  }
+  .footer-meta .privacy {
+    font-size: 12px;
+    margin: 0;
+  }
 }
-@media only screen and (max-width: 600px) and (min-width: 425px) {
+@media only screen and (max-width: 600px) {
   .container {
     width: 100%;
   }
@@ -968,7 +955,7 @@ body a {
     background-color: #00000080;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -9px;
   }
   .mobile-content .back {
     display: none;
@@ -1050,22 +1037,38 @@ body a {
   .shopofy-mobile {
     display: block;
     width: 100%;
-    height: 660px;
-    background-color: red;
+    height: 100%;
+  }
+  .shopofy-mobile .item {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 20px;
+  }
+  .shopofy-mobile .item img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+  }
+  #shopofy-mobile .owl-nav {
+    display: none;
+  }
+  #shopofy-mobile .owl-dots {
+    display: none;
   }
   /* favorite-style */
   .favorite-style {
     height: 100%;
+    margin-top: 0;
   }
   .favorite-style .favor-content {
     width: 300px;
     font-size: 32px;
-    height: 105px;
+    height: unset;
     line-height: 70px;
   }
   .favorite-style p {
     width: 300px;
-    font-size: 39px;
+    font-size: 20px;
     text-align: center;
     background-color: black;
     color: white;
@@ -1073,10 +1076,10 @@ body a {
     font-weight: 500;
   }
   .favor .title {
-    font-size: 22px;
+    font-size: 18px;
   }
   .favor .cost {
-    font-size: 22px;
+    font-size: 18px;
   }
   .favor .item {
     margin-bottom: 30px;
@@ -1126,7 +1129,7 @@ body a {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 425px) and (min-width: 320px) {
+@media only screen and (max-width: 425px) {
   .container {
     width: 100%;
   }
@@ -1148,5 +1151,23 @@ body a {
     font-weight: 400;
     text-align: center;
     padding-top: 5px;
+  }
+  .mobile-content .back {
+    width: 180px;
+    height: 100%;
+    background-color: #00000080;
+    position: fixed;
+    top: 0;
+    right: -59px;
+  }
+  .mobile-header {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+  }
+  .mobile-head img {
+    max-width: 100%;
+    height: 360px;
   }
 }
