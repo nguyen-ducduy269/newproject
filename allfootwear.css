@@ -28,7 +28,7 @@
 }
 .sale .item {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 .sale .item img {
   max-width: 100%;
@@ -68,7 +68,7 @@
 }
 .tele .item {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 .tele .item img {
   max-width: 100%;
